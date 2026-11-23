@@ -1,0 +1,1 @@
+# Changelog — PULSELOG v2\n\n- Installable web app metadata and icon.\n- Offline app shell with service worker.\n- Date-specific daily reflections.\n- JSON backup import and export.\n- Electron desktop wrapper and Windows installer configuration.\n
