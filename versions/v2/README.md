@@ -27,10 +27,10 @@ From this folder, install dependencies with `npm install`, then run `npm run dis
 
 ## Windows installer
 
-The v2 Windows installer has been built successfully.
+The project is configured to publish the Windows installer as a standalone `.exe` file on the GitHub Releases page, so you can download it directly without extracting a ZIP.
 
-**[Download the PULSELOG v2 Windows installer](https://github.com/tw23414/pulselog/actions/runs/45096220234)**
+**[Open PULSELOG v2.0.0 downloads](https://github.com/tw23414/pulselog/releases/tag/v2.0.0)**
 
-Open the workflow run and download the `PULSELOG-Windows-Installer` artifact near the bottom of the page. Extract the ZIP, then run the `.exe` installer inside it.
+On the release page, click the `PULSELOG Setup 2.0.0.exe` asset under **Assets**. If the release is still being built, check back after the GitHub Actions run completes.
 
-*Note: GitHub Actions artifacts expire after 30 days. A future permanent installer download should be attached to a GitHub Release.*
+**Windows Smart App Control:** The installer is not currently code-signed. Windows may still block it even when downloaded as a direct EXE. A trusted code-signing certificate is needed to establish publisher trust; changing the file format does not remove that warning.
