@@ -1,0 +1,1 @@
+# Changelog — PULSELOG v1\n\n## v1.0.0\n- Original daily wellbeing dashboard.\n- Optional food and calorie logging.\n- Water, movement, sleep, mood, energy and habit tracking.\n- Seven-day habit overview and JSON export.\n
