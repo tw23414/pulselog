@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
+    tags: ['v*']
     paths:
       - 'index.html'
       - 'main.cjs'
@@ -13,7 +14,7 @@ on:
       - '.github/workflows/build-windows.yml'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build-windows:
@@ -33,7 +34,21 @@ jobs:
       - name: Build Windows installer
         run: npm run dist
 
-      - name: Upload installer
+      - name: Upload installer as a direct EXE release asset
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v2.0.0
+          target_commitish: main
+          name: PULSELOG v2.0.0
+          body: |
+            PULSELOG v2.0.0 Windows desktop installer.
+
+            Download the .exe asset below. No ZIP extraction is needed.
+          files: dist/*.exe
+          fail_on_unmatched_files: true
+
+      - name: Upload installer build artifact (backup)
         uses: actions/upload-artifact@v4
         with:
           name: PULSELOG-Windows-Installer
