@@ -22,3 +22,15 @@ Open `index.html` in a modern browser. For install and offline features, serve i
 
 ## Build the Windows desktop installer
 From this folder, install dependencies with `npm install`, then run `npm run dist` on Windows (or on a compatible build runner).
+
+---
+
+## Windows installer
+
+The v2 Windows installer has been built successfully.
+
+**[Download the PULSELOG v2 Windows installer](https://github.com/tw23414/pulselog/actions/runs/45096220234)**
+
+Open the workflow run and download the `PULSELOG-Windows-Installer` artifact near the bottom of the page. Extract the ZIP, then run the `.exe` installer inside it.
+
+*Note: GitHub Actions artifacts expire after 30 days. A future permanent installer download should be attached to a GitHub Release.*
