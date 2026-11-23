@@ -1,7 +1,13 @@
 # Changelog
 
-## 1.0.0 — 2026-11-23
-- First public prototype.
-- Added daily dashboard, habits, food and optional calorie logs, water, steps, workouts, sleep, mood and energy.
-- Added seven-day habit overview and JSON export.
-- Added local-only browser storage and responsive layout.
+## v2
+- Added installable-app metadata and an app icon.
+- Added a service worker to cache the app shell for offline use after the first online visit.
+- Added date-specific daily reflections.
+- Added JSON backup import alongside export.
+- Preserved the existing local-storage data format and v1 entries.
+
+## v1
+- Initial daily wellbeing dashboard.
+- Optional food and calorie logging, water, movement, sleep, mood, energy and habits.
+- Seven-day habit overview and JSON backup export.
