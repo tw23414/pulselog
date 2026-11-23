@@ -23,6 +23,9 @@ Open [the live app](https://tw23414.github.io/pulselog/) after enabling GitHub P
 3. Select **main** and **/(root)**, then save.
 4. After GitHub finishes deploying, the app will be available at the URL above.
 
+## Windows desktop installer
+Download the [PULSELOG Setup 2.0.0.exe](https://github.com/tw23414/pulselog/releases/download/v2.0.0/PULSELOG.Setup.2.0.0.exe) from the [v2.0.0 release page](https://github.com/tw23414/pulselog/releases/tag/v2.0.0). Run it to open the Windows setup wizard. It can create Start Menu and desktop shortcuts and can be uninstalled from Windows Settings. The installer is currently unsigned, so Smart App Control may warn or block it.
+
 ## Install
 Open the live site in a supported browser. When the browser offers installation, use the **Install PULSELOG** button or the browser's install option. On iPhone/iPad, use Safari's **Share → Add to Home Screen**.
 
